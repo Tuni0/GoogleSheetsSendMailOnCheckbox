@@ -6,6 +6,7 @@ function onDateEdit(e) {
     row: e.range.getRow(),
     column: e.range.getColumn(),
   };
+  
   /**console.log("column::",column); column check test*/
 
   var targetRange = triggerValues.sheet.getRange(triggerValues.row,1,1,10); /**choose data range*/
@@ -27,6 +28,7 @@ function onDateEdit(e) {
     GmailApp.sendEmail(mailData.recipient, mailData.subject, mailData.body, {
       cc: "ccmails",
     });
+    
     //Mail delivery check test
   } else if ((triggerValues.column = 3 && checkboxValue == "NIE/NO")) {
     console.log("Checkbox was marked false");
