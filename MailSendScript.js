@@ -18,8 +18,7 @@ function onDateEdit(e) {
     body:
       "//Data" +
       targetValues[0][14].toString() +
-     
-  };
+     };
 
 
   if ((triggerValues.column = 3 && checkboxValue == "TAK/YES")) {
