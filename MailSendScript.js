@@ -9,7 +9,7 @@ function onDateEdit(e) {
   
   /**console.log("column::",column); column check test*/
 
-  var targetRange = triggerValues.sheet.getRange(triggerValues.row,1,1,10); /**choose data range*/
+  var targetRange = triggerValues.sheet.getRange(triggerValues.row,0,0,0); /**choose data range*/
   var targetValues = targetRange.getValues();
   /**console.log("targetRange::",targetValues); range test*/
 
